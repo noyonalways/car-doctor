@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .feature-card:nth-child(2)  {
+        @apply bg-primary text-white
+    }
+}
