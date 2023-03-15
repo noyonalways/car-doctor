@@ -30,7 +30,7 @@ const Login = () => {
 								/>
 							</div>
 							<input
-								className="w-full bg-primary hover:bg-[#e93713] py-2 text-white rounded"
+								className="w-full bg-primary hover:bg-[#e93713] py-2 text-white rounded cursor-pointer"
 								type="submit"
 								value="Log in"
 							/>
