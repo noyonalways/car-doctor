@@ -1,6 +1,6 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
 
 const SocialLogin = () => {
 	return (
@@ -10,8 +10,8 @@ const SocialLogin = () => {
 				<button className="bg-[#F5F5F8] dark:bg-gray-200 p-4 rounded-full text-xl text-[#3b5998]">
 					<FaFacebookF />
 				</button>
-				<button className="bg-[#F5F5F8] dark:bg-gray-200 p-4 rounded-full text-xl text-[#0072b1]">
-					<FaLinkedinIn />
+				<button className="bg-[#F5F5F8] dark:bg-gray-200 p-4 rounded-full text-xl text-[#00acee]">
+					<FaTwitter />
 				</button>
 				<button className="bg-[#F5F5F8] dark:bg-gray-200 p-4 rounded-full text-xl">
 					<FcGoogle />

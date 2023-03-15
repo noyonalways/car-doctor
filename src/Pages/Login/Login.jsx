@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import image from "../../assets/images/login/login.svg";
-import SocialLogin from "../../components/SocialLogin";
+import SocialLogin from "./SocialLogin";
+
 
 const Login = () => {
 	return (

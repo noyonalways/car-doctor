@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo.svg";
 import { HiOutlineShoppingBag, HiSearch } from "react-icons/hi";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 	const menuItems = (
@@ -23,7 +23,7 @@ const Navbar = () => {
 				<a href="/#contact">Contact</a>
 			</li>
 			<li>
-				<Link to="login">Login</Link>
+				<NavLink to="login">Login</NavLink>
 			</li>
 		</>
 	);
@@ -43,9 +43,9 @@ const Navbar = () => {
 								{menuItems}
 							</ul>
 						</div>
-						<Link className="w-20 sm:w-auto ml-2 md:ml-0" to='/'>
+						<NavLink className="w-20 sm:w-auto ml-2 md:ml-0" to='/'>
 							<img src={logo} alt="" />
-						</Link>
+						</NavLink>
 					</div>
 					<div className="navbar-center hidden lg:flex">
 						<ul className="menu menu-horizontal px-1">{menuItems}</ul>

@@ -1,7 +1,8 @@
 import React from "react";
-import SocialLogin from "../../components/SocialLogin";
+
 import image from "../../assets/images/login/login.svg";
 import { Link } from "react-router-dom";
+import SocialLogin from "./SocialLogin";
 const Signup = () => {
 	return (
 		<div className="py-16">
