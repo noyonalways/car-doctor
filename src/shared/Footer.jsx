@@ -13,17 +13,17 @@ const Footer = () => {
 							Edwin Diaz is a software and web technologies engineer, a life
 							coach trainer who is also a serial .
 						</p>
-						<div className="flex items-center space-x-5">
-							<a className="bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
+						<div className="flex items-center space-x-5 ">
+							<a className="duration-300 bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
 								<BsGoogle />
 							</a>
-							<a className="bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
+							<a className="duration-300 bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
 								<BsTwitter />
 							</a>
-							<a className="bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
+							<a className="duration-300 bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
 								<BsInstagram />
 							</a>
-							<a className="bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
+							<a className="duration-300 bg-[#2c2c2c] flex items-center justify-center btn-circle btn-primary text-white" href="#">
 								<BsLinkedin />
 							</a>
 						</div>

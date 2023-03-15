@@ -13,7 +13,7 @@ const FeaturesSection = () => {
 				/>
 				<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 place-items-center gap-6">
 					{features.map((feature) => (
-						<div className="min-w-full md:min-w-[170px]  px-6 py-8 hover:bg-primary hover:text-white flex flex-col items-center rounded-xl shadow-md space-y-3 bg-[#ffffff] dark:bg-[#4e5664] duration-300  feature-card">
+						<div key={feature.id} className="min-w-full md:min-w-[170px]  px-6 py-8 hover:bg-primary hover:text-white flex flex-col items-center rounded-xl shadow-md space-y-3 bg-[#ffffff] dark:bg-[#4e5664] duration-300  feature-card">
 							<img src={feature.img} alt={feature + "image"} />
                             <h3>{feature.title}</h3>
 						</div>

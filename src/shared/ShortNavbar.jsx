@@ -1,8 +1,10 @@
 import React from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 const ShortNavbar = () => {
+	const { pathname } = useLocation();
+
 	const menuItems = (
 		<>
 			<li>
@@ -15,7 +17,9 @@ const ShortNavbar = () => {
 				<a href="/order">Order Review</a>
 			</li>
 			<li>
-				<Link to="/login">Login</Link>
+				<Link to={pathname.includes("login") ? "signup" : "login"}>
+					{pathname.includes("login") ? "Signup" : "Login"}
+				</Link>
 			</li>
 		</>
 	);

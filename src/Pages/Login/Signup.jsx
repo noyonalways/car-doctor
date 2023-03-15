@@ -44,7 +44,7 @@ const Signup = () => {
 								/>
 							</div>
 							<input
-								className="w-full bg-primary py-2 text-white rounded"
+								className="w-full bg-primary hover:bg-[#e93713] py-2 text-white rounded"
 								type="submit"
 								value="Sign Up"
 							/>

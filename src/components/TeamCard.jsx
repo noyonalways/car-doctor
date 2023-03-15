@@ -24,24 +24,40 @@ const TeamCard = ({ member }) => {
 					<p>{skill}</p>
 					<div className="flex items-center justify-center text-white space-x-2">
 						{socialLink.map(
-							(link) =>
+							(link, index) =>
 								(link.includes("facebook") && (
-									<a href={link} className="p-3 bg-[#3b5998] rounded-full">
+									<a target="_blank"
+										key={index + 1}
+										href={link}
+										className="p-3 bg-[#3b5998] rounded-full"
+									>
 										<FaFacebookF />
 									</a>
 								)) ||
-								(link.includes("twiter") && (
-									<a href={link} className="p-3 bg-[#00acee] rounded-full">
+								(link.includes("twitter") && (
+									<a target="_blank"
+										key={index + 1}
+										href={link}
+										className="p-3 bg-[#00acee] rounded-full"
+									>
 										<FaTwitter />
 									</a>
 								)) ||
-								(link.includes("liniked") && (
-									<a href={link} className="p-3 bg-[#0072b1] rounded-full">
+								(link.includes("linkedin") && (
+									<a target="_blank"
+										key={index + 1}
+										href={link}
+										className="p-3 bg-[#0072b1] rounded-full"
+									>
 										<FaLinkedinIn />
 									</a>
 								)) ||
 								(link.includes("instagram") && (
-									<a href={link} className="p-3 bg-gradient-to-r from-[#BD4697] from- to-[#EF545E] rounded-full">
+									<a target="_blank"
+										key={index + 1}
+										href={link}
+										className="p-3 bg-gradient-to-r from-[#BD4697] from- to-[#EF545E] rounded-full"
+									>
 										<FaInstagram />
 									</a>
 								))

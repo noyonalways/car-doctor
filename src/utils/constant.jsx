@@ -102,8 +102,8 @@ export const teamMembers = [
 		id: 1,
 		socialLink: [
 			"https://facebook.com/noyonalways",
-			"https://twiter.com/noyonalways",
-			"https://liniked.com/in/noyonalways",
+			"https://twitter.com/noyonalways",
+			"https://linkedin.com/in/noyonalways",
 			"https://instagram.com/noyonalways",
 		],
 	},
@@ -114,8 +114,8 @@ export const teamMembers = [
 		id: 1,
 		socialLink: [
 			"https://facebook.com/noyonalways",
-			"https://twiter.com/noyonalways",
-			"https://liniked.com/in/noyonalways",
+			"https://twitter.com/noyonalways",
+			"https://linkedin.com/in/noyonalways",
 			"https://instagram.com/noyonalways",
 		],
 	},
@@ -125,8 +125,8 @@ export const teamMembers = [
 		img: member3,
 		socialLink: [
 			"https://facebook.com/noyonalways",
-			"https://twiter.com/noyonalways",
-			"https://liniked.com/in/noyonalways",
+			"https://twitter.com/noyonalways",
+			"https://linkedin.com/in/noyonalways",
 			"https://instagram.com/noyonalways",
 		],
 	},

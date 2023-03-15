@@ -29,13 +29,18 @@ const Login = () => {
 								/>
 							</div>
 							<input
-								className="w-full bg-primary py-2 text-white rounded"
+								className="w-full bg-primary hover:bg-[#e93713] py-2 text-white rounded"
 								type="submit"
 								value="Log in"
 							/>
 						</form>
 						<SocialLogin />
-						<div className="text-center">Have an account? <Link className="text-primary font-bold" to='/signup'>Sign Up</Link></div>
+						<div className="text-center">
+							Have an account?{" "}
+							<Link className="text-primary font-bold" to="/signup">
+								Sign Up
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
