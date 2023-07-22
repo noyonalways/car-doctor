@@ -1,12 +1,11 @@
 import React from "react";
-import {FiArrowLeft, FiArrowRight} from 'react-icons/fi'
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 const Slide = ({ slide }) => {
 	return (
 		<div
-			
 			id={`slide${slide.id}`}
-			className="carousel-item relative w-full text-white dark:text-slate-300"
+			className="carousel-item relative w-full text-white dark:text-slate-300 rounded-xl overflow-hidden"
 		>
 			<img src={slide.img} className="w-full md:object-cover " />
 			<div className="absolute w-full bg-gradient-to-r from-black to-transparent h-full flex flex-col justify-center ">
@@ -27,20 +26,6 @@ const Slide = ({ slide }) => {
 						</button>
 					</div>
 				</div>
-			</div>
-			<div className="absolute flex space-x-5 justify-end transform -translate-y-1/2 left-5 right-3 -bottom-2 md:right-10 md:bottom-5">
-				<a
-					href={`#slide${slide.id === 1 ? slide.id + 5 : slide.id - 1}`}
-					className="btn btn-sm md:btn-md btn-circle btn-primary text-white"
-				>
-					<FiArrowLeft/>
-				</a>
-				<a
-					href={`#slide${slide.id === 6 ? slide.id - 5 : slide.id + 1}`}
-					className="btn btn-sm md:btn-md btn-circle btn-primary text-white"
-				>
-					<FiArrowRight/>
-				</a>
 			</div>
 		</div>
 	);

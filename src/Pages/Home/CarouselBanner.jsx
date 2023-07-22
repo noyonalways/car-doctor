@@ -1,15 +1,23 @@
 import React from "react";
 import Slide from "../../components/Slide";
 import { carouselSlides } from "../../utils/constant";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 const CarouselBanner = () => {
 	return (
 		<div id="home" className="container my-16">
-			<div className="carousel w-full h-auto  md:h-[600px] rounded-xl md:overflow-hidden">
+			<Swiper
+				modules={[Autoplay]}
+				autoplay={{ delay: 2000 }}
+				grabCursor={true}
+				className="carousel w-full h-auto md:h-[600px] md:overflow-hidden rounded-xl overflow-hidden"
+			>
 				{carouselSlides.map((slide) => (
-					<Slide slide={slide}  key={slide.id}/>
+					<SwiperSlide key={slide.id}>
+						<Slide slide={slide} />
+					</SwiperSlide>
 				))}
-			</div>
+			</Swiper>
 		</div>
 	);
 };
